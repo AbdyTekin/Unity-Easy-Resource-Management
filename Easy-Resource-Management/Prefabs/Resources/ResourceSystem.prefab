@@ -51,14 +51,4 @@ MonoBehaviour:
   Visuals:
     Particle: []
     VFXGraph: []
-  Prefabs:
-  - category: 123
-    prefabs:
-    - name: 786
-      prefab: {fileID: 0}
-    - name: 867
-      prefab: {fileID: 0}
-    - name: 678
-      prefab: {fileID: 0}
-  - category: 
-    prefabs: []
+  Prefabs: []

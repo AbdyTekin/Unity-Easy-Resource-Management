@@ -231,7 +231,14 @@ namespace UltimateSystems
 
             EditorGUILayout.EndScrollView();
 
-            soTarget.ApplyModifiedProperties();
+            if (GUI.changed)
+            {
+                soTarget.ApplyModifiedProperties();
+
+                // If anything changed, mark the prefab asset as dirty so the changes will be saved to disk
+                EditorUtility.SetDirty(target);
+                AssetDatabase.SaveAssets();
+            }
         }
     }
 #endif
